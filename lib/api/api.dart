@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:MovieFlixer/constants.dart';
 import 'package:MovieFlixer/models/movie.dart';
 import 'package:http/http.dart' as http;
@@ -30,7 +29,7 @@ class Api {
        print (decodedData);
        return decodedData.map((movie) => Movie_list.fromJson(movie)).toList();
     } else {
-      throw Exception('Something happened');
+      throw Exception('Something wrong');
     }
   }
 
@@ -41,7 +40,7 @@ class Api {
        print (decodedData);
        return decodedData.map((movie) => Movie_list.fromJson(movie)).toList();
     } else {
-      throw Exception('Something happened');
+      throw Exception('Something wrong');
     }
   }
 
@@ -52,7 +51,7 @@ class Api {
        print (decodedData);
        return decodedData.map((movie) => Movie_list.fromJson(movie)).toList();
     } else {
-      throw Exception('Something happened');
+      throw Exception('Something wrong');
     }
   }
 
@@ -63,7 +62,7 @@ class Api {
      print (decodedData);
      return decodedData.map((movie) => Movie_list.fromJson(movie)).toList();
   } else {
-    throw Exception('Something happened');
+    throw Exception('Something wrong');
   }
 }
 
@@ -74,7 +73,7 @@ Future<List<Movie_list>> getkidsMovies() async{
      print (decodedData);
      return decodedData.map((movie) => Movie_list.fromJson(movie)).toList();
   } else {
-    throw Exception('Something happened');
+    throw Exception('Something wrong');
   }
 }
 
@@ -85,7 +84,7 @@ Future<List<Movie_list>> getActionKidsMovies() async{
      print (decodedData);
      return decodedData.map((movie) => Movie_list.fromJson(movie)).toList();
   } else {
-    throw Exception('Something happened');
+    throw Exception('Something wrong');
   }
 }
 }

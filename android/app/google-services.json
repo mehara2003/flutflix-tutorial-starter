@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "243402503301",
+    "project_id": "movieflixer-94c74",
+    "storage_bucket": "movieflixer-94c74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243402503301:android:9b4b906d48282fe3c765ec",
+        "android_client_info": {
+          "package_name": "com.example.movieflixer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYi3FAIUjdJliR-NSkDEBIdp7lT1VcsXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

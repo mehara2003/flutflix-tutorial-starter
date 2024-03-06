@@ -4,13 +4,17 @@ import 'package:google_fonts/google_fonts.dart';
 import '../models/movie.dart';
 import 'widgets/MovieSliders.dart';
 import 'widgets/TrendingSlider.dart';
+import 'package:MovieFlixer/searchbar/search.dart';
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
+
 }
+
 
 
 class _HomeScreenState extends State<HomeScreen> {
@@ -35,10 +39,7 @@ void initState() {
   Kids_ActionMovies = Api().getActionKidsMovies();
 
 }
- 
-    searchbar(){
 
-    }
 
 
   Widget build(BuildContext context) {
@@ -82,8 +83,8 @@ void initState() {
                     }
                   }
                 ),
-              ),
-
+              ),  
+              searchfunc(),
 
               const SizedBox (height: 28),
               Text('Top Rated Movies', style: GoogleFonts.aBeeZee(
@@ -110,7 +111,7 @@ void initState() {
                   }
                 ),
               ),
-
+        
 
               const SizedBox (height: 28),
               Text('Upcoming Movies', style: GoogleFonts.aBeeZee(
@@ -216,8 +217,7 @@ void initState() {
               ),  
 
               const SizedBox(height: 29),
-              
-                     
+               
           ],
         ),
       ),
